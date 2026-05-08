@@ -1264,7 +1264,9 @@ save_ENUMERATION_DEFAULT
     _definition.id                ENUMERATION_DEFAULT
     _definition.scope             Category
     _definition.class             Loop
-    _definition.update            2023-06-23
+    _definition_replaced.id       1
+    _definition_replaced.by       .
+    _definition.update            2026-06-08
     _description.text
 ;
     Deprecated. The ENUMERATION_DEFAULTS category should be used instead
