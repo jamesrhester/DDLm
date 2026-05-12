@@ -2641,8 +2641,8 @@ save_type.source
          category and/or an item which has values in common with those of
          another Loop category and is considered a Link between these lists.
 
-         Data items of this type includes both primitive and non-primitive
-         items.
+         Data items of this type are considered either primitive or
+         non-primitive.
 ;
          Derived
 ;
