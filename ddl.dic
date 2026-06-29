@@ -1230,9 +1230,10 @@ save_enumeration.range
     _definition.update            2023-01-09
     _description.text
 ;
-    The inclusive range of numerical values allowed for the defined item.
-    If the defined item has associated SU values, the reported data values
-    may fall outside these limits.
+    The inclusive range of numerical values allowed for the defined item,
+    or for all elements of 'Array', 'List' or 'Matrix' types, or for all
+    values of 'Table' types. If the defined item has associated SU values,
+    the reported data values may fall outside these limits.
 ;
     _name.category_id             enumeration
     _name.object_id               range
@@ -1264,7 +1265,9 @@ save_ENUMERATION_DEFAULT
     _definition.id                ENUMERATION_DEFAULT
     _definition.scope             Category
     _definition.class             Loop
-    _definition.update            2023-06-23
+    _definition_replaced.id       1
+    _definition_replaced.by       .
+    _definition.update            2026-06-08
     _description.text
 ;
     Deprecated. The ENUMERATION_DEFAULTS category should be used instead
@@ -2639,8 +2642,8 @@ save_type.source
          category and/or an item which has values in common with those of
          another Loop category and is considered a Link between these lists.
 
-         Data items of this type includes both primitive and non-primitive
-         items.
+         Data items of this type are considered either primitive or
+         non-primitive.
 ;
          Derived
 ;
@@ -2731,12 +2734,18 @@ save_
       _dictionary_author.name
       _dictionary_author.id_orcid
       _dictionary_author.email
-         1  'Hall, Sydney R.'   .                    .
-         2  'Spadaccini, Nick'  .                    .
-         3  'Hester, James R.'  0000-0002-2004-8672  jxh@ansto.gov.au
-         4  'Vaitkus, Antanas'  0000-0002-5944-1391  antanas.vaitkus@bti.vu.lt
-         5  'Rowles, Matthew'   .                    .
-         6  'McMahon, Brian'    0000-0003-0391-0002  .
+         1               'Hall, Sydney R.'                  .
+         .
+         2               'Spadaccini, Nick'                 .
+         .
+         3               'Hester, James R.'                 0000-0002-2004-8672
+         jxh@ansto.gov.au
+         4               'Vaitkus, Antanas'                 0000-0002-5944-1391
+         antanas.vaitkus@bti.vu.lt
+         5               'Rowles, Matthew R.'               0000-0002-7448-6774
+         .
+         6               'McMahon, Brian'                   0000-0003-0391-0002
+         .
 
     loop_
       _dictionary_audit.version
